@@ -19,3 +19,12 @@
 - (IBAction) sendPostcard;
 
 @end
+
+@implementation UIImagePickerController (OrientationFix)
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+
+@end
