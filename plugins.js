@@ -3,6 +3,6 @@
 // Add to Cordova.plist. key: Postcard value: CDVPostcard
 
 function launchPostcard (apiKey) {
-    if (typeof apiKey ==="undefined"){apiKey= '';}
+    if (apiKey == null){apiKey = "";}
     cordova.exec(function(){},function(err){console.log(err);alert(err);},"Postcard","startPostcardWithAPIkey",[apiKey]);
 }
